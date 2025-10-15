@@ -30,24 +30,18 @@
   justify-content: center;
   margin: 6%;
 }
-/* 🌊 ICONS CONTAINER (optional but helps center perfectly) */
-
-
-/* 🐠 Shared icon style */
 .icon-row i {
-  font-size: clamp(35px, 5vw, 55px); /* auto-resize depending on screen size */
   text-shadow: 5px -2px 5px #fff;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   color: palevioletred;
+  font-size: 40px;
+  margin-top: 1.8rem;
 }
 
-/* Hover animation */
 .icon-row i:hover {
   transform: scale(1.05);
 }
-
-/* Unique rotations for each icon */
 #fish:hover {
   transform: rotate(45deg);
 }
@@ -200,68 +194,16 @@ margin-top: -10px;
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-@media (max-width: 768px) {
-  .about, .moments {
-    padding: 50px 5%;
-  }
-
-  .my-img img {
-    width: 180px;
-    height: 180px;
-  }
-
-  fieldset pre {
-    font-size: 40px;
-    left: -20%;
-  }
-}
-/* 📱 For tablets and smaller screens */
 @media (max-width: 1024px) {
-  #fish, #fish2, #fish3 {
-    font-size: 45px;
-  }
-
   .my-img img {
     width: 220px;
     height: 220px;
   }
 }
-
-/* 📱 For mobile screens (below 768px) */
-@media (max-width: 768px) {
-  .my-img {
-    margin: 3rem auto;
-  }
-
-  .my-img img {
-    width: 180px;
-    height: 180px;
-  }
-
-  /* 💙 make icons line up and center properly */
-  #fish1, #fish2, #fish3 {
-    display: inline-block;
-    margin: 10px;
-    transform: none;
-    font-size: 40px;
-  }
-
-  /* remove those strong negative margins on mobile */
-  #fish {
-    margin-left: 0;
-  }
-
-  #shrimp {
-    margin-right: 0;
-    margin-top: 0;
-  }
-}
-
-/* 📱 Extra small phones (below 480px) */
 @media (max-width: 480px) {
   .my-img img {
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
   }
 
   #fish, #fish2, #fish3 {
@@ -276,15 +218,7 @@ margin-top: -10px;
   gap: 60%;
   margin-top: 2rem;
 }
-#fish{
-margin-left: -5rem;
-}
-@media (max-width: 600px) {
-  .icon-row {
-    gap: 20px;
-    margin-top: 1.5rem;
-  }
-}
+
 .books{
   margin-top: -5%;
    font-family: "Poppins", sans-serif;
@@ -328,4 +262,34 @@ margin: 4rem 3rem ;
 }
 .books p{
   font-size: 1.2rem;
+}
+@media (max-width:768px) {
+  .icon-row{
+    margin-top: 55%;
+    gap: 40px;
+  }
+  .icon-row i{
+   width: 50px;
+  }
+  .my-img{
+    margin: 4.2rem;
+  }
+  .my-img img{
+    width: 200px;
+    height: 200px;
+  }
+  #fish:hover , #fish2:hover , #fish3:hover{
+    transform: rotate(20deg);
+  }
+    .about, .moments {
+    padding: 50px 5%;
+  }
+
+
+
+  fieldset pre {
+    font-size: 40px;
+    left: -20%;
+  }
+
 }
