@@ -1,3 +1,13 @@
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #a6d8ff, #e3f2fd);
+  color: #033b59;
+  text-align: center;
+  overflow-x: hidden;
+}
+
 #bg-video {
   position: fixed;
   top: 0;
@@ -6,11 +16,17 @@
   height: 100vh;
   object-fit: cover;
   z-index: -1;
-  margin: 0%;
-  padding: 0%;
-    pointer-events: none;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
 }
 
+/* ------------------ IMAGE & ICONS ------------------ */
+.my-img {
+  text-align: center;
+  justify-content: center;
+  margin: 6%;
+}
 
 .my-img img {
   border-radius: 50%;
@@ -22,14 +38,20 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
 }
+
 .my-img img:hover {
   transform: scale(1.03);
 }
-.my-img {
-  text-align: center;
+
+.icon-row {
+  display: flex;
   justify-content: center;
-  margin: 6%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60%;
+  margin-top: 2rem;
 }
+
 .icon-row i {
   text-shadow: 5px -2px 5px #fff;
   transition: all 0.3s ease-in-out;
@@ -42,61 +64,53 @@
 .icon-row i:hover {
   transform: scale(1.05);
 }
+
 #fish:hover {
   transform: rotate(45deg);
 }
 
-#fish2:hover {
-  transform: rotate(20deg);
-}
-
+#fish2:hover,
 #fish3:hover {
   transform: rotate(20deg);
 }
 
-
-fieldset{
-    margin: 1.5rem;
-border: #004e7c solid;
+/* ------------------ FIELDSET ------------------ */
+fieldset {
+  margin: 1.5rem;
+  border: #004e7c solid;
 }
-fieldset pre{
+
+fieldset pre {
   font-size: 52px;
-margin-left: -90%;
+  margin-left: -90%;
   margin-top: -4px;
   transition: all 0.3s ease-in-out;
+}
 
+fieldset a {
+  text-decoration: none;
 }
-fieldset a{
-    text-decoration: none;
-}
-fieldset a:hover pre{
+
+fieldset a:hover pre {
   transform: scale(1.05);
 }
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(to bottom, #a6d8ff, #e3f2fd);
-  color: #033b59;
-  text-align: center;
-  overflow-x: hidden;
-  
-}
 
+/* ------------------ ABOUT SECTION ------------------ */
 .about {
   padding: 80px 10%;
   margin-top: -9%;
 }
-.about hr{
+
+.about hr {
   width: 10%;
-height: 0px;
-border: 1px solid ;
-color: #004e7c;
-margin-top: -10px;
+  border: 1px solid #004e7c;
+  margin-top: -10px;
 }
+
 .about h1 {
   font-size: 2.5rem;
   color: #004e7c;
-margin-top: -10px;
+  margin-top: -10px;
 }
 
 .intro {
@@ -111,6 +125,7 @@ margin-top: -10px;
   color: #0077b6;
 }
 
+/* ------------------ GALLERY ------------------ */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -142,24 +157,23 @@ margin-top: -10px;
   transform: scale(1.05);
 }
 
+/* ------------------ MOMENTS SECTION ------------------ */
 .moments {
   padding: 80px 10%;
   margin-top: -10%;
 }
-.moments hr{
+
+.moments hr {
   width: 30%;
-  height: 0px;
-  border: 1px #004e7c solid;
+  border: 1px solid #004e7c;
   margin-top: -10px;
   margin-bottom: 19px;
 }
+
 .moments h1 {
   font-size: 2.4rem;
   color: #004e7c;
-
 }
-
-
 
 .moments-gallery {
   display: grid;
@@ -187,109 +201,156 @@ margin-top: -10px;
   padding: 15px;
   font-size: 1rem;
   color: #045b7a;
-
 }
 
 .moment-card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-@media (max-width: 1024px) {
-  .my-img img {
-    width: 220px;
-    height: 220px;
-  }
-}
-@media (max-width: 480px) {
-  .my-img img {
-    width: 90px;
-    height: 90px;
-  }
 
-  #fish, #fish2, #fish3 {
-    font-size: 35px;
-  }
-}
-.icon-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 60%;
-  margin-top: 2rem;
-}
-
-.books{
+/* ------------------ BOOKS SECTION ------------------ */
+.books {
   margin-top: -5%;
-   font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.books-gallery{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
-  gap: 35px;
-justify-content: center;
 
-margin: 4rem 3rem ;
+.books-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 35px;
+  justify-content: center;
+  margin: 4rem 3rem;
 }
-.book-card{
-    background: #ffffffb8;
+
+.book-card {
+  background: #ffffffb8;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   max-width: 230px;
 }
-.book-card img{
-    width: 100%;
+
+.book-card img {
+  width: 100%;
   height: 380px;
   object-fit: cover;
   border-bottom: 3px solid #90caf9;
 }
+
 .book-card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+
 .book-card p {
   padding: 15px;
   font-size: 1rem;
   color: #045b7a;
-
 }
-.books hr{
-  height: 0;
+
+.books hr {
   border: #004e7c solid 1px;
   width: 15%;
 }
-.books p{
+
+.books p {
   font-size: 1.2rem;
 }
-@media (max-width:768px) {
-  .icon-row{
-    margin-top: 55%;
-    gap: 40px;
-  }
-  .icon-row i{
-   width: 50px;
-  }
-  .my-img{
-    margin: 4.2rem;
-  }
-  .my-img img{
-    width: 200px;
-    height: 200px;
-  }
-  #fish:hover , #fish2:hover , #fish3:hover{
-    transform: rotate(20deg);
-  }
-    .about, .moments {
-    padding: 50px 5%;
-  }
 
+/* ------------------ RESPONSIVENESS ------------------ */
 
+/* Tablets */
+@media (max-width: 1024px) {
+  .about, .moments, .books {
+    padding: 60px 7%;
+  }
+  .about h1, .moments h1 {
+    font-size: 2rem;
+  }
+  .intro {
+    font-size: 1.1rem;
+  }
+  .icon-row {
+    gap: 40%;
+    margin-top: 50%;
+  }
+  .book-card img {
+    height: 320px;
+  }
+}
 
+/* Phones */
+@media (max-width: 830px) {
+  .my-img img {
+    height: 195px;
+    width: 195px;
+  }
+  .about h1, .moments h1 {
+    font-size: 1.8rem;
+  }
+  .intro {
+    font-size: 1rem;
+    margin: 0 10px 40px;
+  }
+  .icon-row {
+    gap: 25%;
+       margin-top: 55%;
+  }
   fieldset pre {
-    font-size: 40px;
-    left: -20%;
+    font-size: 36px;
+    margin-left: 0;
+    text-align: center;
   }
+  .books-gallery, .moments-gallery, .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
+/* Small Phones */
+@media (max-width: 480px) {
+  .about, .moments, .books {
+    padding: 40px 5%;
+  }
+  .about h1, .moments h1 {
+    font-size: 1.5rem;
+  }
+  .intro {
+    font-size: 0.9rem;
+  }
+  .my-img img {
+    width: 160px;
+    height: 160px;
+  }
+  .icon-row {
+    flex-direction: row;
+    gap: 20%;
+ margin-top: 50%;
+  }
+  .books-gallery, .moments-gallery, .gallery {
+    grid-template-columns: 1fr;
+  }
+  .book-card img {
+    height: 280px;
+  }
+}
+@media (max-width: 360px){
+  .icon-row{
+    margin-top: 60%;
+  }
+}
+@media (max-width: 390px){
+  .icon-row{
+    margin-top: 80%;
+  }
+}
+@media (max-width: 490px){
+  .icon-row{
+    margin-top: 80%;
+  }
+}
+@media (max-width: 300px){
+  .icon-row{
+    margin-top: 80%;
+  }
 }
