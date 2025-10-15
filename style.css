@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -21,7 +20,6 @@ body {
   pointer-events: none;
 }
 
-/* ------------------ IMAGE & ICONS ------------------ */
 .my-img {
   text-align: center;
   justify-content: center;
@@ -74,7 +72,6 @@ body {
   transform: rotate(20deg);
 }
 
-/* ------------------ FIELDSET ------------------ */
 fieldset {
   margin: 1.5rem;
   border: #004e7c solid;
@@ -95,7 +92,6 @@ fieldset a:hover pre {
   transform: scale(1.05);
 }
 
-/* ------------------ ABOUT SECTION ------------------ */
 .about {
   padding: 80px 10%;
   margin-top: -9%;
@@ -125,7 +121,6 @@ fieldset a:hover pre {
   color: #0077b6;
 }
 
-/* ------------------ GALLERY ------------------ */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -156,8 +151,6 @@ fieldset a:hover pre {
 .card:hover {
   transform: scale(1.05);
 }
-
-/* ------------------ MOMENTS SECTION ------------------ */
 .moments {
   padding: 80px 10%;
   margin-top: -10%;
@@ -208,7 +201,6 @@ fieldset a:hover pre {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* ------------------ BOOKS SECTION ------------------ */
 .books {
   margin-top: -5%;
   font-family: "Poppins", sans-serif;
@@ -258,14 +250,14 @@ fieldset a:hover pre {
   font-size: 1.2rem;
 }
 
-/* ------------------ RESPONSIVENESS ------------------ */
-
-/* Tablets */
 @media (max-width: 1024px) {
-  .about, .moments, .books {
+  .about,
+  .moments,
+  .books {
     padding: 60px 7%;
   }
-  .about h1, .moments h1 {
+  .about h1,
+  .moments h1 {
     font-size: 2rem;
   }
   .intro {
@@ -280,13 +272,13 @@ fieldset a:hover pre {
   }
 }
 
-/* Phones */
 @media (max-width: 830px) {
   .my-img img {
     height: 195px;
     width: 195px;
   }
-  .about h1, .moments h1 {
+  .about h1,
+  .moments h1 {
     font-size: 1.8rem;
   }
   .intro {
@@ -295,24 +287,27 @@ fieldset a:hover pre {
   }
   .icon-row {
     gap: 25%;
-       margin-top: 55%;
+    margin-top: 55%;
   }
   fieldset pre {
     font-size: 36px;
     margin-left: 0;
     text-align: center;
   }
-  .books-gallery, .moments-gallery, .gallery {
+  .books-gallery,
+  .moments-gallery,
+  .gallery {
     grid-template-columns: 1fr 1fr;
   }
 }
-
-/* Small Phones */
 @media (max-width: 480px) {
-  .about, .moments, .books {
+  .about,
+  .moments,
+  .books {
     padding: 40px 5%;
   }
-  .about h1, .moments h1 {
+  .about h1,
+  .moments h1 {
     font-size: 1.5rem;
   }
   .intro {
@@ -325,32 +320,34 @@ fieldset a:hover pre {
   .icon-row {
     flex-direction: row;
     gap: 20%;
- margin-top: 50%;
+    margin-top: 50%;
   }
-  .books-gallery, .moments-gallery, .gallery {
+  .books-gallery,
+  .moments-gallery,
+  .gallery {
     grid-template-columns: 1fr;
   }
   .book-card img {
     height: 280px;
   }
 }
-@media (max-width: 360px){
-  .icon-row{
+@media (max-width: 360px) {
+  .icon-row {
     margin-top: 60%;
   }
 }
-@media (max-width: 390px){
-  .icon-row{
+@media (max-width: 390px) {
+  .icon-row {
     margin-top: 80%;
   }
 }
-@media (max-width: 490px){
-  .icon-row{
+@media (max-width: 490px) {
+  .icon-row {
     margin-top: 80%;
   }
 }
-@media (max-width: 300px){
-  .icon-row{
+@media (max-width: 300px) {
+  .icon-row {
     margin-top: 80%;
   }
 }
